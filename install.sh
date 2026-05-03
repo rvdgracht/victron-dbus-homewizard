@@ -46,7 +46,7 @@ RC_LOCAL=/data/rc.local
 # Check if rc.local exists
 if [ ! -x "${RC_LOCAL}" ]; then
     echo "Creating executable file '${RC_LOCAL}'"
-    echo "#!/bin/sh\n" > "${RC_LOCAL}"
+    echo "#!/bin/sh" > "${RC_LOCAL}"
     chmod +x "${RC_LOCAL}"
 fi
 
